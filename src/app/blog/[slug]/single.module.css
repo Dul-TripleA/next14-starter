@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  gap: 100px;
+}
+
+.leftContainer {
+  flex: 1;
+  position: relative;
+  height: calc(100vh - 200px);
+}
+
+.rightContainer {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 64px;
+}
+
+.details {
+  display: flex;
+  gap: 30px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.author,
+.published {
+  color: gray;
+  font-weight: bold;
+}
+
+.authorName,
+.date {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
